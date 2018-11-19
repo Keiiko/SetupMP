@@ -1,11 +1,11 @@
 object Form7: TForm7
-  Left = 1032
-  Top = 652
+  Left = 893
+  Top = 631
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'About'
-  ClientHeight = 159
-  ClientWidth = 537
+  ClientHeight = 160
+  ClientWidth = 681
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -1569,9 +1569,9 @@ object Form7: TForm7
   object Label1: TLabel
     Left = 160
     Top = 16
-    Width = 254
+    Width = 411
     Height = 20
-    Caption = 'Setup For VEGs Modern Patchs of'
+    Caption = 'Setup For VEGs Modern Patch and Zaps166 Wrapper of'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -17
@@ -1583,9 +1583,11 @@ object Form7: TForm7
   object Label2: TLabel
     Left = 160
     Top = 40
-    Width = 332
+    Width = 478
     Height = 20
-    Caption = 'Need For Speed Hot Pursuit and High Stakes'
+    Caption = 
+      'Need For Speed II Special Edition, III Hot Pursuit and High Stak' +
+      'es'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -17
@@ -1599,10 +1601,10 @@ object Form7: TForm7
     Top = 112
     Width = 149
     Height = 13
-    Caption = 'Created by Keiiko '#169' 2016-2017'
+    Caption = 'Created by Keiiko '#169' 2016-2018'
   end
   object Label5: TLabel
-    Left = 492
+    Left = 636
     Top = 8
     Width = 35
     Height = 13
@@ -1909,12 +1911,12 @@ object Form7: TForm7
   object Label3: TLabel
     Left = 160
     Top = 128
-    Width = 234
+    Width = 300
     Height = 13
-    Caption = 'For NFS3 v1.6.1 (+beta) and NFS4 v0.1.0 (+beta)'
+    Caption = 'For NFS2 v1.2.4, NFS3 v1.6.1 (+beta) and NFS4 v0.1.0 (+beta)'
   end
   object BitBtn1: TBitBtn
-    Left = 432
+    Left = 576
     Top = 120
     Width = 81
     Height = 25

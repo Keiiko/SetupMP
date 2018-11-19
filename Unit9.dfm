@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 1018
-  Top = 564
+  Left = 1106
+  Top = 198
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Load...'

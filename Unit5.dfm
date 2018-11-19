@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 804
-  Top = 548
+  Left = 1273
+  Top = 126
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Internal Variables'

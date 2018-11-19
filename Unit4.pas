@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, ShellAPI, SysUtils, Classes, ImgList, Controls, Dialogs, Menus,
-  ExtDlgs, Forms;
+  ExtDlgs, Forms, ExtCtrls;
 
 type
   TDataModule4 = class(TDataModule)
@@ -20,7 +20,6 @@ type
     About2: TMenuItem;
     Exit2: TMenuItem;
     Edit1: TMenuItem;
-    SaveThrashSettings1: TMenuItem;
     Show2: TMenuItem;
     Language1: TMenuItem;
     Graphic1: TMenuItem;
@@ -41,6 +40,15 @@ type
     VEGsWebPageNFS41: TMenuItem;
     JimDiablosStockandExpansionpack1: TMenuItem;
     ImageList2: TImageList;
+    OpenDialog2: TOpenDialog;
+    Zaps166NFS21: TMenuItem;
+    DiscordforNFS3Multiplayer1: TMenuItem;
+    NFSResources1: TMenuItem;
+    OpenNFSRetropage1: TMenuItem;
+    Graphic2: TMenuItem;
+    Program2: TMenuItem;
+    Joystick2: TMenuItem;
+    Timer1: TTimer;
     procedure Reset1Click(Sender: TObject);
     procedure Load1Click(Sender: TObject);
     procedure Save1Click(Sender: TObject);
@@ -64,6 +72,11 @@ type
     procedure kruto1Click(Sender: TObject);
     procedure JimDiablosStockandExpansionpack1Click(Sender: TObject);
     procedure DataModuleCreate(Sender: TObject);
+    procedure Zaps166NFS21Click(Sender: TObject);
+    procedure DiscordforNFS3Multiplayer1Click(Sender: TObject);
+    procedure NFSResources1Click(Sender: TObject);
+    procedure OpenNFSRetropage1Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -75,7 +88,7 @@ var
 
 implementation
 
-uses Unit1, Unit5, Unit6, Unit7, Unit8, Unit9;
+uses Unit1, Unit5, Unit6, Unit7, Unit8, Unit9, Unit11;
 
 {$R *.dfm}
 
@@ -159,7 +172,10 @@ end;
 procedure TDataModule4.Help2Click(Sender: TObject);
 begin
   Messagebeep(MB_ICONINFORMATION);
-  MessageDlg('Help is shown after hovering mouse on option.'+#13#10+'All informations are also in VEGs readme file.', mtConfirmation, [mbOK], 0);
+  if (nfs='2') then
+    MessageDlg('Help is shown after hovering mouse on option.'+#13#10+'All informations are also in nfs2se.conf file.', mtConfirmation, [mbOK], 0)
+  else
+    MessageDlg('Help is shown after hovering mouse on option.'+#13#10+'All informations are also in VEGs readme file.', mtConfirmation, [mbOK], 0);
 end;
 
 procedure TDataModule4.VEGsReadme2Click(Sender: TObject);
@@ -210,6 +226,31 @@ procedure TDataModule4.DataModuleCreate(Sender: TObject);
 begin
   OpenDialog1.InitialDir:=GetCurrentDir;
   SaveDialog1.InitialDir:=GetCurrentDir;
+end;
+
+procedure TDataModule4.Zaps166NFS21Click(Sender: TObject);
+begin
+  ShellExecute(0, 'open', PAnsiChar('https://github.com/zaps166/NFSIISE'), nil, nil, SW_NORMAL);
+end;
+
+procedure TDataModule4.DiscordforNFS3Multiplayer1Click(Sender: TObject);
+begin
+  ShellExecute(0, 'open', PAnsiChar('https://www.needforspeed3.racing'), nil, nil, SW_NORMAL);
+end;
+
+procedure TDataModule4.NFSResources1Click(Sender: TObject);
+begin
+  ShellExecute(0, 'open', PAnsiChar('http://www.nfsaddons.com/forums//index.php?topic=1710.0'), nil, nil, SW_NORMAL);
+end;
+
+procedure TDataModule4.OpenNFSRetropage1Click(Sender: TObject);
+begin
+  ShellExecute(0, 'open', PAnsiChar('https://opennfs.com/'), nil, nil, SW_NORMAL);
+end;
+
+procedure TDataModule4.Timer1Timer(Sender: TObject);
+begin
+  Form11.Update();
 end;
 
 end.

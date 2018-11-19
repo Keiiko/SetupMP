@@ -61,7 +61,7 @@ begin
       //cleanup
       exportfile.free;
       Form8.Close;
-    end
+    end;
 end;
 
 procedure TForm8.FormShow(Sender: TObject);

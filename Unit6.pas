@@ -20,10 +20,6 @@ type
     CheckBox1: TCheckBox;
     GroupBox3: TGroupBox;
     RadioButton1: TRadioButton;
-    Label4: TLabel;
-    Label5: TLabel;
-    SpeedButton2: TSpeedButton;
-    Label7: TLabel;
     Label6: TLabel;
     SpeedButton1: TSpeedButton;
     RadioButton2: TRadioButton;
@@ -31,6 +27,8 @@ type
     Bevel1: TBevel;
     CheckBox2: TCheckBox;
     BitBtn2: TBitBtn;
+    GroupBox4: TGroupBox;
+    CheckBox3: TCheckBox;
     procedure FormShow(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -64,7 +62,14 @@ end;
 
 procedure TForm6.SpeedButton1Click(Sender: TObject);
 begin
-  DataModule4.OpenPictureDialog1.Execute;
+  Form6.Enabled:=false;
+  if DataModule4.OpenPictureDialog1.Execute then
+    begin
+      Form6.Label6.Caption:=DataModule4.OpenPictureDialog1.FileName;
+      Form6.Enabled:=true;
+    end
+  else
+    Form6.Enabled:=true;
 end;
 
 procedure TForm6.SpeedButton2Click(Sender: TObject);

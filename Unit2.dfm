@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 924
-  Top = 514
+  Left = 1155
+  Top = 238
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'nGlide Advanced Settings'

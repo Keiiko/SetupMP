@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 1296
-  Top = 536
+  Left = 1143
+  Top = 253
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Export...'
