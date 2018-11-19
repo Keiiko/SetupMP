@@ -1,4 +1,5 @@
-SetupMP - GUI setup for NFS3/4 Modern Patchs
+SetupMP - GUI setup for NFS3/4 Modern Patchs and NFS2 Wrapper
+
 License
 
 This program is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License
