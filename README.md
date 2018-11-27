@@ -72,23 +72,26 @@ Version History
 ---------------
 
 0.2.0.0
-Added NFS2 Wrapper settings
-Custom Thrash drivers support and management
-Custom Icon
-Added more links
-Minor menu layout, graphical and about page changes
+
+- Added NFS2 Wrapper settings
+- Custom Thrash drivers support and management
+- Custom Icon
+- Added more links
+- Minor menu layout, graphical and about page changes
 
 
 0.1.0.0
-Advanced settings for thrash drivers inis
-Advanced settings for nGlide ini
-Support for NFS4 ini
-Load and export settings
-Option for setup
-Sound at start
-Menu
+
+- Advanced settings for thrash drivers inis
+- Advanced settings for nGlide ini
+- Support for NFS4 ini
+- Load and export settings
+- Option for setup
+- Sound at start
+- Menu
 
 0.0.3.0
-Initial version
-Basic settings only for NFS3 ini
-Reset values to defaults
+
+- Initial version
+- Basic settings only for NFS3 ini
+- Reset values to defaults
